@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Hitung BMI"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"
+                    android:hint="Masukkan Berat Badan ( Kg )"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/text1"
+                    android:background="@drawable/rectangleedittext"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp">
+                </EditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"
+                    android:hint="Masukkan Tinggi ( Cm / M )"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/text2"
+                    android:background="@drawable/rectangleedittext"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp">
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/btnhitung"
+                android:text="Hitung (Thread)"
+
+                android:enabled="false"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/output"
+                android:layout_gravity="center_horizontal"
+
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"
+                    android:hint="Masukkan Berat Badan ( Kg )"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/text3"
+                    android:background="@drawable/rectangleedittext"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp">
+                </EditText>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"
+                    android:hint="Masukkan Tinggi ( Cm / M )"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/text4"
+                    android:background="@drawable/rectangleedittext"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp">
+
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/btnhitung2"
+                android:text="Hitung (Thread Handler)"
+                android:enabled="false"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/output2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="100dp"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
